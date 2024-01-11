@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StudyIQ - Subscription Notification</title>
+    <style>
+      body {
+        max-width: 648px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Head Section -->
+    <!-- Main Section -->
+    <div style="height: 304px; background: rgba(77, 60, 124, 0.12)">
+      <img
+        src="https://d1rlci61vq6vt7.cloudfront.net/69f692e3-0cfe-451a-86ef-958d54fc822e.png"
+        alt="Logo Image"
+        style="margin: 40px"
+      />
+      <div
+        style="
+          margin: 0 auto;
+          max-width: 488px;
+          padding: 40px;
+          background: #fff;
+          border-radius: 8px;
+          box-shadow: 0px 20px 25px -5px rgba(0, 0, 0.1),
+            0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+        "
+      >
+        <p
+          style="
+            color: #191847;
+            font-family: Avenir;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 26px;
+          "
+        >
+          Hi {{name}},
+        </p>
+        <p
+          style="
+            color: #191847;
+            font-family: Avenir;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+          "
+        >
+          Recording of live class
+          <span
+            style="
+              color: #191847;
+              font-family: Avenir;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 26px;
+            "
+            >{{course_name}}</span
+          >
+          is now available, Now you can watch the session anytime using any of
+          our platforms android/ iOS/ Web!
+        </p>
+        <!-- I am not mentioning dynamic course details link here to make it easier for testing -->
+        <div style="border-radius: 4px; background: #ebecfe; padding: 16px">
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              justify-content: space-evenly;
+              align-items: flex-start;
+              gap: 18px;
+            "
+          >
+            <div>
+              <img
+                src="{{course_image}}"
+                alt="course image here"
+                width="88px"
+                height="58px"
+              />
+            </div>
+            <div style="padding-top: 0px !important">
+              <p
+                style="
+                  margin-top: 0px !important;
+                  margin-bottom: 0px !important;
+                  color: #262338;
+                  font-family: Avenir;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 800;
+                  line-height: 150%;
+                "
+              >
+                Recording of live class {{course_name}} is now available
+              </p>
+              <p
+                style="
+                  color: #6e7191;
+                  font-family: Avenir;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 150%;
+                  margin-top: 0px !important;
+                  margin-bottom: 0px !important;
+                "
+              >
+                Course:
+                <span
+                  style="
+                    color: #423dcf;
+                    font-family: Avenir;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin-top: 0px !important;
+                    margin-bottom: 0px !important;
+                  "
+                  >{{course_name}}</span
+                >
+              </p>
+              <p
+                style="
+                  color: #4e4b66;
+                  font-family: Avenir;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 120%;
+                  margin-top: 0px !important;
+                "
+              >
+                By: {{author}}
+              </p>
+            </div>
+          </div>
+          <a href="{{deeplink}}">
+            <div
+              style="
+                border-radius: 8px;
+                background: #423dcf;
+                width: 100%;
+                color: var(--alias-grayscale-background, #fcfcfc);
+                text-align: center;
+                font-family: Avenir;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 22px;
+                letter-spacing: 0.25px;
+                padding: 8px 0px;
+              "
+            >
+              Watch Now
+            </div>
+          </a>
+        </div>
+        <p
+          style="
+            color: #191847;
+            font-family: Avenir;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 26px;
+          "
+        >
+          Regards,
+        </p>
+        <p
+          style="
+            color: #191847;
+            font-family: Avenir;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 26px;
+          "
+        >
+          Team StudyIQ
+        </p>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background: #293744;
+        padding: 0px 28px 0px 28px;
+        margin-top: 330px;
+      "
+    >
+      <div style="margin: 0 auto; display: flex">
+        <div style="margin-right: 20px; margin-top: 20px; margin-left: 50px">
+          <img
+            src="https://d20r5az4n3z4vx.cloudfront.net/mail/webfooter.png"
+            alt="Footer Image"
+          />
+        </div>
+        <div class="footer-details">
+          <p
+            style="
+              color: #fff;
+              font-family: Avenir;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              padding-top: 40px;
+            "
+          >
+            Have you tried the
+            <span
+              style="
+                color: #ee8145;
+                font-family: Avenir;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              "
+              >StudyIQ</span
+            >
+            iOS app?
+          </p>
+          <p
+            style="
+              color: #fff;
+              font-family: Avenir;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              margin-top: 0px !important;
+            "
+          >
+            Get StudyIQ for
+          </p>
+          <img
+            src="https://d20r5az4n3z4vx.cloudfront.net/mail/playstoreButton.png"
+            alt="Playstore Button Image"
+          />
+          <img
+            src="https://d20r5az4n3z4vx.cloudfront.net/mail/AppStoreButton.png"
+            alt="App Store Button Image"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Footer Links Section -->
+    <div style="text-align: center; margin: 0 auto; margin-top: 24px">
+      <p
+        style="
+          color: #000;
+          font-family: Avenir;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        "
+      >
+        If you have any query click on
+        <span
+          style="
+            color: #ee8145;
+            font-family: Avenir;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          "
+          >Need Help</span
+        >
+      </p>
+      <div
+        align="center"
+        style="width: fit-content; display: flex; margin: 0 auto"
+      >
+        <img
+          src="https://d1rlci61vq6vt7.cloudfront.net/62caf218-8387-4463-ab81-2311d306894d.png"
+          alt="Youtube Icon"
+        />
+        <img
+          src="https://d1rlci61vq6vt7.cloudfront.net/5f76299a-78e0-41ce-a528-f9ad85994b28.png"
+          style="margin-left: 8px"
+          alt="Facebook Icon"
+        />
+        <img
+          src="https://d1rlci61vq6vt7.cloudfront.net/2a85b7d3-a46f-491a-a084-6c68c50f3dfb.png"
+          style="margin-left: 8px"
+          alt="Twitter Icon"
+        />
+        <img
+          src="https://d1rlci61vq6vt7.cloudfront.net/0a2937ca-029a-4f35-a57e-7c340872b07c.png"
+          style="margin-left: 8px"
+          alt="Telegram Icon"
+        />
+      </div>
+    </div>
+  </body>
+</html>
